@@ -13,7 +13,8 @@ entered_data = int(data[3])	#implies the changed data which was taken by program
 old_data = int(data[4])		#this is the value from which changes in the entered_data will begin for the first time in the layer			
 index_fc = int(data[5])		 #line number of the input which shall specify the number of fully connected layers in the program
 
-new_accuracy = float(accuracy_file.read()) 	#read the new accuraacy achieved
+
+new_accuracy = float(str(accuracy_file.read())) 	#read the new accuraacy achieved
 
 #Note : For the first time old data and entered data will be same
 
