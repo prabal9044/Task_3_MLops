@@ -9,7 +9,7 @@ from keras.utils import np_utils
 import keras
 import sys
 
-sys.stdin=open('/mlopstask1/input.txt','r')
+sys.stdin=open('/root/mlopsj2/input.txt','r')
 
 # loads the MNIST dataset
 (x_train, y_train), (x_test, y_test)  = mnist.load_data()
@@ -127,11 +127,11 @@ scores = model.evaluate(x_test, y_test, verbose=1)
 print('Test loss:', scores[0])
 print('Test accuracy:', scores[1])
 
-accuracy_file = open('/mlopstask1/accuracy.txt','w')
+accuracy_file = open('/root/mlopsj2/accuracy.txt','w')
 accuracy_file.write(str(scores[1]))
 accuracy_file.close()
 
-display_matter = open('/mlopstask1/displayresult.html','r+')
+display_matter = open('/root/mlopsj2/displayresult.html','r+')
 display_matter.read()
 display_matter.write('<pre>\n---------------------------------------------\n')
 display_matter.write(this_layer)
